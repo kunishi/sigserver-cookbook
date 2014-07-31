@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
-%w(autoconf automake libtool pkg-config git).do |pkg|
-  action :upgrade
+%w(autoconf automake libtool pkg-config git).each do |pkg|
+  package pkg do
+    action :upgrade
+  end
 end
