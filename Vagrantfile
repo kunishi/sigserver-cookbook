@@ -100,6 +100,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "apt"
     chef.add_recipe "build-essential"
     chef.add_recipe "build-tools"
+    chef.add_recipe "vim"
     chef.add_recipe "java"
     chef.add_recipe "opengl"
     chef.add_recipe "xerces-c"
