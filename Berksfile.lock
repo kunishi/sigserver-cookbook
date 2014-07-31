@@ -6,6 +6,8 @@ DEPENDENCIES
   build-tools
     path: site-cookbooks/build-tools
   java
+  opengl
+    path: site-cookbooks/opengl
   timezone
 
 GRAPH
@@ -14,4 +16,5 @@ GRAPH
   build-essential (2.0.4)
   build-tools (0.1.0)
   java (1.24.0)
+  opengl (0.1.0)
   timezone (0.0.1)
