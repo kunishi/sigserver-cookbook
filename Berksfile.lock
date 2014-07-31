@@ -1,5 +1,7 @@
 DEPENDENCIES
   apt
+  apt-sources-list
+    path: site-cookbooks/apt-sources-list
   build-essential
   build-tools
     path: site-cookbooks/build-tools
@@ -9,6 +11,7 @@ DEPENDENCIES
 
 GRAPH
   apt (2.4.0)
+  apt-sources-list (0.1.0)
   build-essential (2.0.4)
   build-tools (0.1.0)
   openjdk (0.1.0)
