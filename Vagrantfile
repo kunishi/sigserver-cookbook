@@ -103,12 +103,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "java"
     chef.add_recipe "opengl"
     chef.add_recipe "xerces-c"
+    chef.add_recipe "julius"
 
     chef.json = {
       tz: "Asia/Tokyo",
       java: {
         install_flavor: "openjdk",
         jdk_version: "6"
+      },
+      julius: {
+        dictkit_version: "4.2.3"
       }
     }
 
