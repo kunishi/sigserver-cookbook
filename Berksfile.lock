@@ -12,6 +12,8 @@ DEPENDENCIES
     path: site-cookbooks/ode
   opengl
     path: site-cookbooks/opengl
+  sigserver
+    path: site-cookbooks/sigserver
   timezone
   use-bash
     path: site-cookbooks/use-bash
@@ -28,6 +30,7 @@ GRAPH
   julius (0.1.0)
   ode (0.1.0)
   opengl (0.1.0)
+  sigserver (0.1.0)
   timezone (0.0.1)
   use-bash (0.1.0)
   vim (1.1.2)

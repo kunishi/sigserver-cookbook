@@ -106,6 +106,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "xerces-c"
     chef.add_recipe "julius"
     chef.add_recipe "ode"
+    chef.add_recipe "sigserver"
 
     chef.json = {
       tz: "Asia/Tokyo",
@@ -118,6 +119,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       },
       ode: {
         version: "0.12"
+      },
+      sigserver: {
+        version: "2.2.2"
       }
     }
 
