@@ -100,10 +100,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "apt"
     chef.add_recipe "build-essential"
     chef.add_recipe "build-tools"
-    chef.add_recipe "openjdk"
+    chef.add_recipe "java"
 
     chef.json = {
-      tz: "Asia/Tokyo"
+      tz: "Asia/Tokyo",
+      java: {
+        install_flavor: "openjdk",
+        jdk_version: "6"
+      }
     }
 
   #

@@ -5,8 +5,7 @@ DEPENDENCIES
   build-essential
   build-tools
     path: site-cookbooks/build-tools
-  openjdk
-    path: site-cookbooks/openjdk
+  java
   timezone
 
 GRAPH
@@ -14,5 +13,5 @@ GRAPH
   apt-sources-list (0.1.0)
   build-essential (2.0.4)
   build-tools (0.1.0)
-  openjdk (0.1.0)
+  java (1.24.0)
   timezone (0.0.1)
