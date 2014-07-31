@@ -11,6 +11,8 @@ DEPENDENCIES
   opengl
     path: site-cookbooks/opengl
   timezone
+  use-bash
+    path: site-cookbooks/use-bash
   vim
   xerces-c
     path: site-cookbooks/xerces-c
@@ -24,5 +26,6 @@ GRAPH
   julius (0.1.0)
   opengl (0.1.0)
   timezone (0.0.1)
+  use-bash (0.1.0)
   vim (1.1.2)
   xerces-c (0.1.0)
