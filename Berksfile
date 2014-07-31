@@ -1,5 +1,6 @@
 source "https://supermarket.getchef.com"
 
+cookbook 'timezone'
 cookbook 'apt'
 cookbook 'build-essential'
 cookbook 'build-tools', path: 'site-cookbooks/build-tools'

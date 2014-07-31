@@ -5,9 +5,11 @@ DEPENDENCIES
     path: site-cookbooks/build-tools
   openjdk
     path: site-cookbooks/openjdk
+  timezone
 
 GRAPH
   apt (2.4.0)
   build-essential (2.0.4)
   build-tools (0.1.0)
   openjdk (0.1.0)
+  timezone (0.0.1)
