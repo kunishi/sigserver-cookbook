@@ -1,5 +1,8 @@
 DEPENDENCIES
   build-essential
+  build-tools
+    path: site-cookbooks/build-tools
 
 GRAPH
   build-essential (2.0.4)
+  build-tools (0.1.0)
