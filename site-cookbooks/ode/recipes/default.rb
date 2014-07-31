@@ -23,6 +23,7 @@ bash "install_ode" do
     ./configure #{configure_options}
     make
     make install
+    ldconfig
     rm -rf #{src_filename} #{extract_path}
   EOH
 end
