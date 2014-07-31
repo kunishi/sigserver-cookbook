@@ -113,9 +113,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       java: {
         install_flavor: "openjdk",
         jdk_version: "6"
-      },
-      sigserver: {
-        version: "2.2.2"
       }
     }
 
