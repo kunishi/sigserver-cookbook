@@ -95,8 +95,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #  chef.data_bags_path = "../my-recipes/data_bags"
   #  chef.add_recipe "mysql"
   #  chef.add_role "web"
+    chef.add_recipe "apt"
     chef.add_recipe "build-essential"
     chef.add_recipe "build-tools"
+    chef.add_recipe "openjdk"
   #
   #   # You may also specify custom JSON attributes:
   #   chef.json = { mysql_password: "foo" }
