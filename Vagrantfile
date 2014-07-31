@@ -114,11 +114,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         install_flavor: "openjdk",
         jdk_version: "6"
       },
-      julius: {
-        dictkit_version: "4.2.3",
-        dictkit_tgz_checksum: "a6f6374d14bcce4bbffc3358f9f6ac289fa4dda2958166fce35ad26c5e0fe404",
-        dictkit_sourceforge_mirror: "jaist"
-      },
       ode: {
         version: "0.12",
         tgz_checksum: "93dec0fdf52b32447c2587395e2d9591da9bbb984bfdd59b24923ab36b1635e5",
