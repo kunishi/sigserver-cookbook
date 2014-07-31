@@ -15,21 +15,20 @@ end
 
 dictkit_src_filename = "dictation-kit-v#{node['julius']['dictkit_version']}.tar.gz"
 dictkit_src_filepath = "#{Chef::Config['file_cache_path']}/#{dictkit_src_filename}"
+dictkit_src_url = "http://#{node['julius']['dictkit_sourceforge_mirror']}.dl.sourceforge.jp/julius/59050/#{dictkit_src_filename}"
+
 extract_prefix = "/usr/local/share"
 extract_path = "#{extract_prefix}/dictation-kit-v#{node['julius']['dictkit_version']}"
-dictkit_src_url = "http://jaist.dl.sourceforge.jp/julius/59050/#{dictkit_src_filename}"
-dictkit_src_checksum = "a6f6374d14bcce4bbffc3358f9f6ac289fa4dda2958166fce35ad26c5e0fe404"
 
 remote_file dictkit_src_filepath do
   source dictkit_src_url
-  checksum dictkit_src_checksum
-  owner "root"
-  group "root"
+  checksum node['julius']['dictkit_sourceforge_mirror']
   mode "644"
   notifies :run, "execute[extract_dictkit]", :immediately
 end
 
 execute 'extract_dictkit' do
+  command "rm -rf #{extract_path}"
   command "tar xzf #{dictkit_src_filepath} -C #{extract_prefix}"
   action :nothing
 end
