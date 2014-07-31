@@ -1,5 +1,0 @@
-DEPENDENCIES
-  build-essential
-
-GRAPH
-  build-essential (2.0.4)
