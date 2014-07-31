@@ -90,11 +90,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # some recipes and/or roles.
   #
   config.vm.provision "chef_solo" do |chef|
-  #  chef.cookbooks_path = "berks-cookbooks"
-  #  chef.roles_path = "../my-recipes/roles"
-  #  chef.data_bags_path = "../my-recipes/data_bags"
-  #  chef.add_recipe "mysql"
-  #  chef.add_role "web"
+    chef.cookbooks_path = "berks-cookbooks"
+    chef.roles_path = "./roles"
+    chef.data_bags_path = "./data_bags"
+
     chef.add_recipe "timezone"
     chef.add_recipe "use-bash"
     chef.add_recipe "apt-sources-list"
