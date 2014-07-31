@@ -114,11 +114,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         install_flavor: "openjdk",
         jdk_version: "6"
       },
-      ode: {
-        version: "0.12",
-        tgz_checksum: "93dec0fdf52b32447c2587395e2d9591da9bbb984bfdd59b24923ab36b1635e5",
-        sourceforge_mirror: "jaist"
-      },
       sigserver: {
         version: "2.2.2"
       }
