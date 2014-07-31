@@ -9,6 +9,8 @@ DEPENDENCIES
   opengl
     path: site-cookbooks/opengl
   timezone
+  xerces-c
+    path: site-cookbooks/xerces-c
 
 GRAPH
   apt (2.4.0)
@@ -18,3 +20,4 @@ GRAPH
   java (1.24.0)
   opengl (0.1.0)
   timezone (0.0.1)
+  xerces-c (0.1.0)
