@@ -90,13 +90,32 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # some recipes and/or roles.
   #
   config.vm.provision "chef_solo" do |chef|
-  #  chef.cookbooks_path = "berks-cookbooks"
-  #  chef.roles_path = "../my-recipes/roles"
-  #  chef.data_bags_path = "../my-recipes/data_bags"
-  #  chef.add_recipe "mysql"
-  #  chef.add_role "web"
+    chef.cookbooks_path = "berks-cookbooks"
+    chef.roles_path = "./roles"
+    chef.data_bags_path = "./data_bags"
+
+    chef.add_recipe "timezone"
+    chef.add_recipe "use-bash"
+    chef.add_recipe "apt-sources-list"
+    chef.add_recipe "apt"
     chef.add_recipe "build-essential"
-    chef.add_recipe "pkgconfig"
+    chef.add_recipe "build-tools"
+    chef.add_recipe "vim"
+    chef.add_recipe "java"
+    chef.add_recipe "opengl"
+    chef.add_recipe "xerces-c"
+    chef.add_recipe "julius"
+    chef.add_recipe "ode"
+    chef.add_recipe "sigserver"
+
+    chef.json = {
+      tz: "Asia/Tokyo",
+      java: {
+        install_flavor: "openjdk",
+        jdk_version: "6"
+      }
+    }
+
   #
   #   # You may also specify custom JSON attributes:
   #   chef.json = { mysql_password: "foo" }
